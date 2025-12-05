@@ -58,18 +58,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1 */}
             <Link href="/receita/cremoso-formigueiro">
-              <a className="block bg-[#e3c093] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform duration-300">
-                <div className="relative h-48">
+              <a className="block rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg mb-4">
                   <img src={img_cremoso_1} alt="Cremoso Formigueiro" className="w-full h-full object-cover" />
                   <div className="absolute top-4 left-4 bg-[#ff7300] text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow-md">
                     1
                   </div>
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-2xl font-bold text-[#944300] mb-2 uppercase">
+                <div className="p-2 text-center">
+                  <h3 className="text-2xl font-bold text-[#ff7300] mb-2 uppercase">
                     CREMOSO FORMIGUEIRO
                   </h3>
-                  <p className="text-[#452717] font-bold">
+                  <p className="text-[#e3c093] font-bold">
                     O clássico bolo formigueiro com um recheio cremoso irresistível. Sucesso garantido!
                   </p>
                   <div className="mt-4 inline-block text-[#ff7300] font-bold border-b-2 border-[#ff7300]">
@@ -81,18 +81,18 @@ export default function Home() {
 
             {/* Card 2 */}
             <Link href="/receita/abacaxi-docura">
-              <a className="block bg-[#e3c093] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition-transform duration-300">
-                <div className="relative h-48">
+              <a className="block rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform duration-300">
+                <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg mb-4">
                   <img src={img_abacaxi_1} alt="Abacaxi Doçura" className="w-full h-full object-cover" />
                   <div className="absolute top-4 left-4 bg-[#ff7300] text-white w-10 h-10 flex items-center justify-center rounded-full font-bold text-xl shadow-md">
                     2
                   </div>
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-2xl font-bold text-[#944300] mb-2 uppercase">
+                <div className="p-2 text-center">
+                  <h3 className="text-2xl font-bold text-[#ff7300] mb-2 uppercase">
                     ABACAXI DOÇURA
                   </h3>
-                  <p className="text-[#452717] font-bold">
+                  <p className="text-[#e3c093] font-bold">
                     Refrescante e tropical. A combinação perfeita do azedinho do abacaxi com creme suave.
                   </p>
                   <div className="mt-4 inline-block text-[#ff7300] font-bold border-b-2 border-[#ff7300]">
