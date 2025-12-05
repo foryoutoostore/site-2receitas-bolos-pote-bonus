@@ -3,6 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
+import ScrollToTop from "./components/ScrollToTop";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import CremosoFormigueiro from "./pages/CremosoFormigueiro";
@@ -11,13 +12,16 @@ import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 
 function Router() {
   return (
-    <Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
       <Route path="/" component={Home} />
       <Route path="/receita/cremoso-formigueiro" component={CremosoFormigueiro} />
       <Route path="/receita/abacaxi-docura" component={AbacaxiDocura} />
       <Route path="/politica-privacidade" component={PoliticaPrivacidade} />
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 
