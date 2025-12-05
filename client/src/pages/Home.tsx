@@ -12,7 +12,7 @@ export default function Home() {
       <main className="pt-20 pb-10">
         {/* Hero Section */}
         <section className="container text-center mb-12">
-          <div className="relative rounded-2xl overflow-hidden mb-8 border-4 border-[#e3c093]">
+          <div className="relative rounded-2xl overflow-hidden mb-8 shadow-xl">
             <img
               src={img_cremoso_1}
               alt="Bolo de Pote"

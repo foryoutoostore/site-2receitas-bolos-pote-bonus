@@ -23,8 +23,6 @@ interface RecipePageProps {
 }
 
 export default function RecipePage({ data }: RecipePageProps) {
-  // Manter todas as seções abertas por padrão ou fechadas conforme preferência. 
-  // No HTML original era accordion. Vamos manter accordion.
   const [openSections, setOpenSections] = useState<number[]>([]);
 
   const toggleSection = (index: number) => {
@@ -50,8 +48,8 @@ export default function RecipePage({ data }: RecipePageProps) {
           {data.title}
         </h1>
 
-        {/* Imagem 1 - Topo */}
-        <div className="rounded-2xl overflow-hidden mb-8 border-4 border-[#e3c093]">
+        {/* Imagem 1 - Topo (Sem bordas) */}
+        <div className="rounded-2xl overflow-hidden mb-8 shadow-lg">
           <img src={data.images[0]} alt={data.title} className="w-full h-auto object-cover" />
         </div>
 
@@ -59,9 +57,6 @@ export default function RecipePage({ data }: RecipePageProps) {
           {data.sections.map((section, index) => {
             const isOpen = openSections.includes(index);
             
-            // Lógica para inserir imagens 2 e 3 nas posições corretas
-            // Imagem 2: Após "Preparando os Ingredientes" (índice 2)
-            // Imagem 3: Após "Passo a Passo" (índice 3)
             const showImage2 = index === 2;
             const showImage3 = index === 3;
 
@@ -102,13 +97,13 @@ export default function RecipePage({ data }: RecipePageProps) {
                 </div>
 
                 {showImage2 && (
-                  <div className="rounded-2xl overflow-hidden mb-4 border-4 border-[#e3c093]">
+                  <div className="rounded-2xl overflow-hidden mb-4 shadow-lg">
                     <img src={data.images[1]} alt="Detalhe" className="w-full h-auto object-cover" />
                   </div>
                 )}
 
                 {showImage3 && (
-                  <div className="rounded-2xl overflow-hidden mb-4 border-4 border-[#e3c093]">
+                  <div className="rounded-2xl overflow-hidden mb-4 shadow-lg">
                     <img src={data.images[2]} alt="Final" className="w-full h-auto object-cover" />
                   </div>
                 )}
