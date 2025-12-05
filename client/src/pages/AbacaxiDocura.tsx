@@ -59,7 +59,6 @@ Para a Calda Leve:
 • O creme precisa estar totalmente frio antes de montar os potes.
 • Deixe a massa esfriar por completo para não perder a textura.`
     },
-    // FOTO 1 AQUI (img_abacaxi_1)
     {
       title: "PASSO A PASSO",
       content: `Massa:
@@ -98,7 +97,6 @@ Montagem:
 • Creme quente derrete a massa. Use sempre frio.
 • Se quiser mais acidez (gosto azedinho), adicione algumas gotas de limão ao abacaxi.`
     },
-    // FOTO 2 AQUI (img_abacaxi_2)
     {
       title: "LISTA DE UTENSÍLIOS",
       content: `• Tigela grande
@@ -139,7 +137,6 @@ Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, fol
 4) Leve, doce e impossível de resistir.
 5) O pote mais refrescante da sua vitrine.`
     },
-    // FOTO 3 AQUI (img_abacaxi_3)
     {
       title: "DICAS QUE FAZEM A DIFERENÇA",
       content: `• Sempre use o abacaxi cozido para evitar acidez excessiva (muito azedo).
@@ -157,6 +154,11 @@ Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, fol
         <h1 className="text-[25px] md:text-[40px] leading-[1.2] font-bold text-[#ff6600] text-center uppercase py-[30px] px-[20px]">
           ABACAXI&nbsp; DOÇURA
         </h1>
+
+        {/* Imagem 1 - Logo após o título */}
+        <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
+          <img src={img_abacaxi_1} alt="Bolo Abacaxi" className="w-full h-auto object-cover block" />
+        </div>
 
         {/* Renderização das Seções */}
         {sections.map((section, index) => {
@@ -192,18 +194,15 @@ Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, fol
                 </div>
               </div>
 
-              {/* Inserção de Imagens */}
-              {index === 2 && (
-                <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
-                  <img src={img_abacaxi_1} alt="Bolo Abacaxi" className="w-full h-auto object-cover block" />
-                </div>
-              )}
-              {index === 4 && (
+              {/* Imagem 2 - Entre Passo a Passo (index 3) e Dicas de Chef (index 4) */}
+              {index === 3 && (
                 <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
                   <img src={img_abacaxi_2} alt="Detalhe do Doce" className="w-full h-auto object-cover block" />
                 </div>
               )}
-              {index === 10 && (
+
+              {/* Imagem 3 - Entre Ocasiões Ideais (index 7) e Harmonização (index 8) */}
+              {index === 7 && (
                 <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
                   <img src={img_abacaxi_3} alt="Bolo Pronto" className="w-full h-auto object-cover block" />
                 </div>

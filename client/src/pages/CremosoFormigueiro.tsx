@@ -58,7 +58,6 @@ Para a Finalização:
 • Deixe o creme e a massa completamente frios antes de montar os potes.
 • Peneire os ingredientes secos para obter uma massa mais leve e fofinha.`
     },
-    // FOTO 1 AQUI (img_cremoso_1)
     {
       title: "PASSO A PASSO",
       content: `Massa:
@@ -93,7 +92,6 @@ Montagem:
 • O contraste do creme branco com os pontinhos da massa cria apelo visual (fica bonito e chama atenção).
 • Creme frio é indispensável para não desmontar o pote.`
     },
-    // FOTO 2 AQUI (img_cremoso_2)
     {
       title: "LISTA DE UTENSÍLIOS",
       content: `• Tigela grande
@@ -134,7 +132,6 @@ Potes de vidro com tampa colorida e rótulo divertido.`
 4) O pote mais divertido do cardápio.
 5) Cremoso, macio e impossível de resistir.`
     },
-    // FOTO 3 AQUI (img_cremoso_3)
     {
       title: "DICAS QUE FAZEM A DIFERENÇA",
       content: `• Adicione o granulado por último para evitar que derreta.
@@ -152,6 +149,11 @@ Potes de vidro com tampa colorida e rótulo divertido.`
         <h1 className="text-[25px] md:text-[40px] leading-[1.2] font-bold text-[#944300] text-center uppercase py-[30px] px-[20px]">
           CREMOSO FORMIGUEIRO
         </h1>
+
+        {/* Imagem 1 - Logo após o título */}
+        <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
+          <img src={img_cremoso_1} alt="Bolo Formigueiro" className="w-full h-auto object-cover block" />
+        </div>
 
         {/* Renderização das Seções */}
         {sections.map((section, index) => {
@@ -187,18 +189,15 @@ Potes de vidro com tampa colorida e rótulo divertido.`
                 </div>
               </div>
 
-              {/* Inserção de Imagens */}
-              {index === 2 && (
-                <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
-                  <img src={img_cremoso_1} alt="Bolo Formigueiro" className="w-full h-auto object-cover block" />
-                </div>
-              )}
-              {index === 4 && (
+              {/* Imagem 2 - Entre Passo a Passo (index 3) e Dicas de Chef (index 4) */}
+              {index === 3 && (
                 <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
                   <img src={img_cremoso_2} alt="Detalhe do Recheio" className="w-full h-auto object-cover block" />
                 </div>
               )}
-              {index === 10 && (
+
+              {/* Imagem 3 - Entre Ocasiões Ideais (index 7) e Harmonização (index 8) */}
+              {index === 7 && (
                 <div className="w-full rounded-[16px] overflow-hidden mb-[20px]">
                   <img src={img_cremoso_3} alt="Bolo Pronto" className="w-full h-auto object-cover block" />
                 </div>
