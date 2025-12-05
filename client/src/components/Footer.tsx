@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="w-full h-px bg-[#333] max-w-xs" />
 
         <div className="text-center text-xs text-white/80 font-bold space-y-2">
-          <p>© 2025 appRECEITA$ e foryoutoo.click</p>
+          <p>© 2025 appRECEITA$ é um produto ForYouToo.</p>
           <p className="opacity-70 font-normal">
             • Todas as fotos são meramente ilustrativas, feitas por IA.
           </p>
