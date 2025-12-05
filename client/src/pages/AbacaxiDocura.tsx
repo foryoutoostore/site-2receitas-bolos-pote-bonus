@@ -2,100 +2,165 @@ import RecipePage, { RecipeData } from "@/components/RecipePage";
 import { img_abacaxi_1, img_abacaxi_2, img_abacaxi_3 } from "@/lib/images";
 
 const data: RecipeData = {
-  title: "Abacaxi Doçura",
-  color: "#d97e17", // Amarelo título
-  accentColor: "#ffaa00", // Dourado destaque
-  stats: {
-    yield: "12 potes de 250ml",
-    time: "1h 45min",
-    cost: "Médio",
-    difficulty: "Médio"
-  },
+  title: "ABACAXI DOÇURA",
+  color: "#944300", // Laranja Escuro (Títulos)
   images: [img_abacaxi_1, img_abacaxi_2, img_abacaxi_3],
   sections: [
     {
-      title: "Lista de Ingredientes",
-      type: "list",
+      title: "INFORMAÇÕES",
+      type: "text",
       content: [
-        "MASSA: 4 ovos",
-        "MASSA: 1 e 1/2 xícara (chá) de açúcar",
-        "MASSA: 2 xícaras (chá) de farinha de trigo",
-        "MASSA: 1 xícara (chá) de leite quente",
-        "MASSA: 1 colher (sopa) de fermento em pó",
-        "DOCE DE ABACAXI: 1 abacaxi pérola médio picado",
-        "DOCE DE ABACAXI: 1/2 xícara (chá) de açúcar",
-        "CREME BELGA: 1 lata de leite condensado",
-        "CREME BELGA: 500ml de leite",
-        "CREME BELGA: 2 gemas peneiradas",
-        "CREME BELGA: 2 colheres (sopa) de amido de milho",
-        "CREME BELGA: 1 caixinha de creme de leite (para finalizar)"
+        "Rendimento: 8 potes de 200 ml",
+        "Grau de dificuldade: Fácil",
+        "Custo: Médio",
+        "Tempo de preparo: 1 hora e 20 minutos (inclui resfriamento)"
       ]
     },
     {
-      title: "Preparando os Ingredientes",
-      type: "text",
-      content: "Descasque e pique o abacaxi em cubos pequenos, descartando o miolo duro. Peneire as gemas para o creme não ficar com cheiro de ovo. Unte a forma."
+      title: "LISTA DE INGREDIENTES",
+      type: "list",
+      content: [
+        "Para a Massa Branca Fofa:",
+        "• 4 ovos",
+        "• 2 xícaras de açúcar",
+        "• 2 e 1/2 xícaras de farinha de trigo",
+        "• 1 colher (sopa) de manteiga sem sal",
+        "• 1 xícara de leite quente",
+        "• 1 pitada de sal",
+        "• 1 colher (sopa) de fermento em pó",
+        "",
+        "Para o Creme Doce de Abacaxi:",
+        "• 2 latas de leite condensado (395g cada)",
+        "• 1 caixa de creme de leite (200g)",
+        "• 2 colheres (sopa) de amido de milho",
+        "• 2 xícaras de leite integral",
+        "• 1 colher (chá) de essência de baunilha",
+        "",
+        "Para o Abacaxi Cozido:",
+        "• 2 xícaras de abacaxi picado",
+        "• 3 colheres (sopa) de açúcar",
+        "• 1 colher (sopa) de água",
+        "",
+        "Para a Calda Leve:",
+        "• 1/2 xícara de leite",
+        "• 1 colher (sopa) de açúcar"
+      ]
     },
     {
-      title: "Passo a Passo",
+      title: "PREPARANDO OS INGREDIENTES",
+      type: "text",
+      content: [
+        "• Pique o abacaxi em cubinhos pequenos.",
+        "• O creme precisa estar totalmente frio antes de montar os potes.",
+        "• Deixe a massa esfriar por completo para não perder a textura."
+      ]
+    },
+    {
+      title: "PASSO A PASSO",
       type: "steps",
       content: [
-        "1. DOCE DE ABACAXI: Leve o abacaxi e o açúcar ao fogo médio. Não precisa adicionar água. Deixe cozinhar até secar quase todo o líquido e o abacaxi ficar dourado. Reserve.",
-        "2. MASSA: Bata as claras em neve. Adicione as gemas uma a uma, depois o açúcar. Bata bem.",
-        "3. Diminua a velocidade e alterne o leite quente com a farinha. Por último, o fermento.",
-        "4. Asse em forno 180°C por 35-40 min.",
-        "5. CREME BELGA: Na panela, dissolva o amido em um pouco de leite. Junte o restante do leite, leite condensado e gemas.",
-        "6. Leve ao fogo mexendo sempre até engrossar. Desligue e misture o creme de leite.",
-        "7. MONTAGEM: Intercale camadas de bolo (regado com a caldinha que sobrar do doce de abacaxi ou guaraná), creme belga e o doce de abacaxi.",
-        "8. Finalize com creme e um pedaço de abacaxi para decorar."
+        "Massa:",
+        "1- Aqueça o forno a 180ºC. Unte a forma com óleo e polvilhe farinha por cima.",
+        "2- Bata os ovos e o açúcar até virar um creme claro.",
+        "3- Misture o leite quente com a manteiga e coloque no creme.",
+        "4- Acrescente a farinha, o sal e o fermento já peneirados.",
+        "5- Misture com calma.",
+        "6- Leve ao forno por cerca de 30 a 35 minutos. Deixe esfriar e esfarele.",
+        "",
+        "Creme Doce de Abacaxi:",
+        "1- Misture o leite, o amido de milho (maisena) e o leite condensado.",
+        "2- Cozinhe em fogo baixo, mexendo sem parar.",
+        "3- Quando engrossar, desligue e misture o creme de leite e a baunilha (líquido com cheiro doce usado em doces).",
+        "4- Deixe esfriar totalmente.",
+        "",
+        "Abacaxi Cozido:",
+        "1- Coloque o abacaxi, o açúcar e a água em uma panela no fogo baixo.",
+        "2- Cozinhe até formar uma calda leve, sem deixar o abacaxi desmanchar.",
+        "3- Espere esfriar.",
+        "",
+        "Calda:",
+        "1- Misture o leite e o açúcar até o açúcar dissolver.",
+        "",
+        "Montagem:",
+        "1- Coloque uma camada de bolo esfarelado no fundo do pote.",
+        "2- Regue com a calda.",
+        "3- Coloque o creme.",
+        "4- Acrescente uma colher do abacaxi cozido.",
+        "5- Repita as camadas até chegar no topo do pote.",
+        "6- Leve para gelar por 2 horas."
       ]
     },
     {
-      title: "Dicas de Chef",
+      title: "DICAS DE CHEF",
       type: "text",
-      content: "O segredo do creme belga perfeito é cozinhar bem o amido para não ficar com gosto residual. Se quiser um creme mais leve, bata chantilly e misture ao creme belga já frio (vira um Creme Diplomata)."
+      content: [
+        "• Abacaxi cru pode talhar o creme (fazer ele desandar). Sempre use cozido.",
+        "• Creme quente derrete a massa. Use sempre frio.",
+        "• Se quiser mais acidez (gosto azedinho), adicione algumas gotas de limão ao abacaxi."
+      ]
     },
     {
-      title: "Lista de Utensílios",
+      title: "LISTA DE UTENSÍLIOS",
       type: "list",
       content: [
-        "Batedeira",
-        "Panela para o doce",
-        "Panela para o creme",
-        "Peneira (para as gemas)",
-        "Forma retangular",
-        "Potes de 250ml"
+        "• Tigela grande",
+        "• Peneira",
+        "• Panela média",
+        "• Espátula de silicone",
+        "• Forma média",
+        "• Potes de 200 ml com tampa",
+        "• Medidores de cozinha"
       ]
     },
     {
-      title: "Sugestões de Substituições",
+      title: "SUGESTÕES DE SUBSTITUIÇÕES",
       type: "text",
-      content: "Abacaxi em Calda: Pode usar se estiver com pressa, mas o sabor do abacaxi fresco é incomparável.\n\nCoco: Adicionar coco ralado ao creme belga transforma em um recheio 'Delícia de Abacaxi com Coco'."
+      content: [
+        "• Abacaxi fresco: pode usar o de lata, mas escorra bem a água.",
+        "• Baunilha: pode trocar por raspas de limão.",
+        "• Leite integral: pode ser semidesnatado (com menos gordura)."
+      ]
     },
     {
-      title: "Ocasiões Ideais",
+      title: "OCASIÕES IDEAIS PARA SERVIR OU VENDER",
       type: "text",
-      content: "Sobremesas de verão, casamentos (versão pote de luxo) e vendas em dias quentes."
+      content: "Ótimo para dias quentes, vendas em feiras, entrega em casa e sobremesas individuais. O sabor tropical agrada muito."
     },
     {
-      title: "Harmonização",
+      title: "SUGESTÃO DE HARMONIZAÇÃO (BEBIDAS)",
       type: "text",
-      content: "Vinho branco suave ou espumante moscatel. Sucos cítricos também vão bem."
+      content: "Combina com suco natural, água de coco ou chá gelado."
     },
     {
-      title: "Sugestões de Embalagens",
+      title: "SUGESTÕES DE EMBALAGENS",
       type: "text",
-      content: "Use potes com tampa amarela ou dourada. Etiquetas com desenhos tropicais chamam atenção."
+      content: [
+        "Opção Econômica:",
+        "Potes plásticos simples de 200 ml.",
+        "",
+        "Opção Gourmet:",
+        "Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, folhas)."
+      ]
     },
     {
-      title: "Ideias para Redes Sociais",
+      title: "IDEIAS PARA REDES SOCIAIS",
       type: "text",
-      content: "Fotos com luz natural, mostrando os pedaços de fruta. Use cores vibrantes no cenário."
+      content: [
+        "1) O sabor tropical que refresca e conquista.",
+        "2) Abacaxi cremoso como você nunca provou.",
+        "3) Cada colherada é um mergulho no verão.",
+        "4) Leve, doce e impossível de resistir.",
+        "5) O pote mais refrescante da sua vitrine."
+      ]
     },
     {
-      title: "Dicas que Fazem a Diferença",
+      title: "DICAS QUE FAZEM A DIFERENÇA",
       type: "text",
-      content: "Cuidado com a acidez do abacaxi: cozinhe bem com o açúcar para neutralizar a enzima que pode amargar o creme se misturado quente."
+      content: [
+        "• Sempre use o abacaxi cozido para evitar acidez excessiva (muito azedo).",
+        "• Respeite os tempos de resfriamento para garantir camadas perfeitas.",
+        "• Este pote tem alta aceitação por ser leve, cremoso e equilibrado."
+      ]
     }
   ]
 };

@@ -41,78 +41,57 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   
-  /* Custom Fonts */
-  --font-display: "Playfair Display", serif;
-  --font-body: "Montserrat", sans-serif;
-  --font-hand: "Dancing Script", cursive;
+  /* Fontes do HTML Original */
+  --font-display: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 :root {
-  /* Design Philosophy: Gourmet Artesanal Moderno */
-  /* Base: Preto Profundo e Bege Creme */
-  /* Destaque: Laranja Queimado e Amarelo Ouro */
-  
-  --primary: #E65100; /* Laranja Queimado - Ação/Apetite */
-  --primary-foreground: #FFFFFF;
-  
-  --secondary: #FFD700; /* Amarelo Ouro - Riqueza/Sucesso */
-  --secondary-foreground: #111111;
-  
-  --background: #111111; /* Preto Profundo - Fundo Principal */
-  --foreground: #F5F5DC; /* Bege Creme - Texto Principal */
-  
-  --card: #1A1A1A; /* Cinza Quase Preto - Cards */
-  --card-foreground: #F5F5DC;
-  
-  --popover: #1A1A1A;
-  --popover-foreground: #F5F5DC;
-  
-  --muted: #2A2A2A;
-  --muted-foreground: #A0A0A0;
-  
-  --accent: #2A2A2A;
-  --accent-foreground: #FFD700;
-  
-  --destructive: #EF4444;
-  --destructive-foreground: #FFFFFF;
-  
-  --border: #333333;
-  --input: #333333;
-  --ring: #E65100;
-  
-  --radius: 0.5rem;
-  
-  --sidebar: #111111;
-  --sidebar-foreground: #F5F5DC;
-  --sidebar-primary: #E65100;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #2A2A2A;
-  --sidebar-accent-foreground: #FFD700;
-  --sidebar-border: #333333;
-  --sidebar-ring: #E65100;
-}
+  /* Paleta EXATA do arquivo 2-cremosoformigueiro.html */
+  /* --bg-dark: #2f1c0c; */
+  /* --bg-card: #e3c093; */
+  /* --orange-accent: #944300; */
+  /* --text-primary: #452717; */
+  /* --card-arrow-color: #ff7300; */
 
-.light {
-  /* Inversão para modo claro se necessário, mas o design pede dark mode por padrão */
-  --background: #F5F5DC;
-  --foreground: #111111;
-  --card: #FFFFFF;
-  --card-foreground: #111111;
-  --popover: #FFFFFF;
-  --popover-foreground: #111111;
-  --primary: #E65100;
-  --primary-foreground: #FFFFFF;
-  --secondary: #FFD700;
-  --secondary-foreground: #111111;
-  --muted: #E5E5E5;
-  --muted-foreground: #666666;
-  --accent: #E5E5E5;
-  --accent-foreground: #111111;
+  --background: #2f1c0c; /* Marrom Café Fundo */
+  --foreground: #e3c093; /* Bege Texto Claro */
+  
+  --card: #e3c093; /* Bege Card */
+  --card-foreground: #452717; /* Marrom Texto Escuro */
+  
+  --popover: #e3c093;
+  --popover-foreground: #452717;
+  
+  --primary: #ff7300; /* Laranja Vivo (Setas/Destaques) */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #944300; /* Laranja Escuro (Títulos) */
+  --secondary-foreground: #ffffff;
+  
+  --muted: #4a2c13;
+  --muted-foreground: #e3c093;
+  
+  --accent: #944300;
+  --accent-foreground: #ffffff;
+  
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #CCCCCC;
-  --input: #CCCCCC;
-  --ring: #E65100;
+  
+  --border: #944300;
+  --input: #4a2c13;
+  --ring: #ff7300;
+  
+  --radius: 16px; /* Conforme CSS original .recipe-card { border-radius: 16px; } */
+  
+  --sidebar: #2f1c0c;
+  --sidebar-foreground: #e3c093;
+  --sidebar-primary: #ff7300;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #4a2c13;
+  --sidebar-accent-foreground: #e3c093;
+  --sidebar-border: #944300;
+  --sidebar-ring: #ff7300;
 }
 
 @layer base {
@@ -123,10 +102,7 @@
     @apply bg-background text-foreground font-body;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
-  }
-  .font-hand {
-    font-family: var(--font-hand);
+    @apply font-display font-bold uppercase;
   }
 }
 
@@ -135,36 +111,13 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 768px; /* Conforme CSS original .recipe-container */
   }
 
   .flex {
     min-height: 0;
     min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 1280px;
-    }
-  }
-  
-  /* Utilitários de Texto Gourmet */
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FFD700] via-[#FDB931] to-[#FFD700];
-  }
-  
-  .text-shadow-sm {
-    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
   }
 }
