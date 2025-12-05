@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen bg-white text-[#452717] font-body">
       <Header />
 
-      <main className="pt-[72px]"> {/* Compensar altura do header fixo */}
+      <main className="pt-[60px]"> {/* Compensar altura do header fixo */}
         
         {/* Hero Section - FULL WIDTH */}
         <section className="relative w-full h-[600px] overflow-hidden">
@@ -40,14 +40,14 @@ export default function Home() {
             
             <a 
               href="#receitas"
-              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-4 px-10 rounded-full text-xl transition-all shadow-xl transform hover:scale-105"
+              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-2 px-8 rounded-full text-lg md:text-xl transition-all shadow-xl transform hover:scale-105 whitespace-nowrap"
             >
               Sua Renda Extra Começa Agora!
             </a>
             
-            {/* Ícone de dinheiro abaixo do botão (simulado) */}
-            <div className="mt-6 text-white text-4xl drop-shadow-md">
-              $
+            {/* Ícone de dinheiro abaixo do botão (substituído por logo) */}
+            <div className="mt-6 drop-shadow-md">
+              <img src="/images/logo_receitas_branco.webp" alt="Logo Receitas" className="h-16 w-auto" />
             </div>
           </div>
         </section>
