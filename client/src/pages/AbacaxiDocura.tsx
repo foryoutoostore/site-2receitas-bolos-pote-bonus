@@ -2,12 +2,11 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { img_abacaxi_1, img_abacaxi_2, img_abacaxi_3 } from "@/lib/images";
-import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function AbacaxiDocura() {
   // Estado para controlar quais seções estão abertas
-  const [openSections, setOpenSections] = useState<number[]>([]);
+  const [openSections, setOpenSections] = useState<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
 
   const toggleSection = (index: number) => {
     setOpenSections(prev => 
@@ -17,7 +16,7 @@ export default function AbacaxiDocura() {
     );
   };
 
-  // Dados exatos do HTML original
+  // Dados exatos do HTML original (pasted_content_2.txt)
   const sections = [
     {
       title: "INFORMAÇÕES",
@@ -93,25 +92,25 @@ Montagem:
     },
     {
       title: "DICAS DE CHEF",
-      content: `• Abacaxi cru pode talhar o creme (fazer ele desandar). Sempre use cozido.
-• Creme quente derrete a massa. Use sempre frio.
-• Se quiser mais acidez (gosto azedinho), adicione algumas gotas de limão ao abacaxi.`
+      content: `<span style="color: rgb(255, 255, 255);">• </span>Abacaxi cru pode talhar o creme (fazer ele desandar). Sempre use cozido.
+<span style="color: rgb(255, 255, 255);">• </span>Creme quente derrete a massa. Use sempre frio.
+<span style="color: rgb(255, 255, 255);">• </span>Se quiser mais acidez (gosto azedinho), adicione algumas gotas de limão ao abacaxi.`
     },
     {
       title: "LISTA DE UTENSÍLIOS",
-      content: `• Tigela grande
-• Peneira
-• Panela média
-• Espátula de silicone
-• Forma média
-• Potes de 200 ml com tampa
-• Medidores de cozinha`
+      content: `<span style="color: rgb(255, 255, 255);">• </span>Tigela grande
+<span style="color: rgb(255, 255, 255);">• </span>Peneira
+<span style="color: rgb(255, 255, 255);">• </span>Panela média
+<span style="color: rgb(255, 255, 255);">• </span>Espátula de silicone
+<span style="color: rgb(255, 255, 255);">• </span>Forma média
+<span style="color: rgb(255, 255, 255);">• </span>Potes de 200 ml com tampa
+<span style="color: rgb(255, 255, 255);">• </span>Medidores de cozinha`
     },
     {
       title: "SUGESTÕES DE SUBSTITUIÇÕES",
-      content: `• Abacaxi fresco: pode usar o de lata, mas escorra bem a água.
-• Baunilha: pode trocar por raspas de limão.
-• Leite integral: pode ser semidesnatado (com menos gordura).`
+      content: `<span style="color: rgb(255, 255, 255);">• </span>Abacaxi fresco: pode usar o de lata, mas escorra bem a água.
+<span style="color: rgb(255, 255, 255);">• </span>Baunilha: pode trocar por raspas de limão.
+<span style="color: rgb(255, 255, 255);">• </span>Leite integral: pode ser semidesnatado (com menos gordura).`
     },
     {
       title: "OCASIÕES IDEAIS PARA SERVIR OU VENDER",
@@ -123,25 +122,25 @@ Montagem:
     },
     {
       title: "SUGESTÕES DE EMBALAGENS",
-      content: `Opção Econômica:
+      content: `<span style="color: rgb(255, 255, 255);">Opção Econômica:</span>
 Potes plásticos simples de 200 ml.
 
-Opção Gourmet:
+<span style="color: rgb(255, 255, 255);">Opção Gourmet:</span>
 Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, folhas).`
     },
     {
       title: "IDEIAS PARA REDES SOCIAIS",
-      content: `1) O sabor tropical que refresca e conquista.
-2) Abacaxi cremoso como você nunca provou.
-3) Cada colherada é um mergulho no verão.
-4) Leve, doce e impossível de resistir.
-5) O pote mais refrescante da sua vitrine.`
+      content: `<span style="color: rgb(255, 255, 255);">1) </span>O sabor tropical que refresca e conquista.
+<span style="color: rgb(255, 255, 255);">2)</span> Abacaxi cremoso como você nunca provou.
+<span style="color: rgb(255, 255, 255);">3) </span>Cada colherada é um mergulho no verão.
+<span style="color: rgb(255, 255, 255);">4)</span> Leve, doce e impossível de resistir.
+<span style="color: rgb(255, 255, 255);">5)</span> O pote mais refrescante da sua vitrine.`
     },
     {
       title: "DICAS QUE FAZEM A DIFERENÇA",
-      content: `• Sempre use o abacaxi cozido para evitar acidez excessiva (muito azedo).
-• Respeite os tempos de resfriamento para garantir camadas perfeitas.
-• Este pote tem alta aceitação por ser leve, cremoso e equilibrado.`
+      content: `<span style="color: rgb(255, 255, 255);">• </span>Sempre use o abacaxi cozido para evitar acidez excessiva (muito azedo).
+• <span style="color: rgb(255, 255, 255);">Respeite os tempos de resfriamento para garantir camadas perfeitas.</span>
+<span style="color: rgb(255, 255, 255);">• </span>Este pote tem alta aceitação por ser leve, cremoso e equilibrado.`
     }
   ];
 
@@ -172,13 +171,15 @@ Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, fol
                   className="p-[20px] flex items-center gap-[12px] cursor-pointer"
                   onClick={() => toggleSection(index)}
                 >
-                  <ChevronDown 
+                  <svg 
                     className={cn(
-                      "w-[18px] h-[18px] text-[#ff6600] transition-transform duration-300 flex-shrink-0 drop-shadow-md",
+                      "w-[18px] h-[18px] text-[#ff6600] transition-transform duration-300 flex-shrink-0 drop-shadow-md fill-[#ff6600]",
                       isOpen ? "rotate-0" : "-rotate-90"
                     )} 
-                    strokeWidth={4}
-                  />
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon points="12,18 2,6 22,6"/>
+                  </svg>
                   <h2 className="text-[22px] md:text-[24px] leading-[1.2] font-bold text-[#ffffff] uppercase flex-1">
                     {section.title}
                   </h2>
@@ -189,9 +190,8 @@ Potes de vidro com tampa de metal e rótulo tropical (com desenhos de praia, fol
                     "px-[20px] pb-[20px] text-[17px] md:text-[16px] leading-[1.7] font-bold whitespace-pre-wrap break-words transition-all duration-300 ease-in-out",
                     isOpen ? "block opacity-100 translate-y-0" : "hidden opacity-0 -translate-y-2"
                   )}
-                >
-                  {section.content}
-                </div>
+                  dangerouslySetInnerHTML={{ __html: section.content }}
+                />
               </div>
 
               {/* Imagem 2 - Entre Passo a Passo (index 3) e Dicas de Chef (index 4) */}
