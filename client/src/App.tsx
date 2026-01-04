@@ -9,8 +9,8 @@ import Home from "./pages/Home";
 import CremosoFormigueiro from "./pages/CremosoFormigueiro";
 import AbacaxiDocura from "./pages/AbacaxiDocura";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
-
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <>
       <ScrollToTop />
