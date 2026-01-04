@@ -8,7 +8,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "2 RECEITAS GRÁTIS", href: "/" },
+    { name: "RECEITAS GRÁTIS", href: "/" },
     { name: "CREMOSO FORMIGUEIRO", href: "/receita/cremoso-formigueiro" },
     { name: "ABACAXI DOÇURA", href: "/receita/abacaxi-docura" },
   ];
