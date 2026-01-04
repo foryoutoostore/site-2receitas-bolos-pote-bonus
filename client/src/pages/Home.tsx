@@ -47,7 +47,7 @@ export default function Home() {
             
             {/* Ícone de dinheiro abaixo do botão (substituído por logo) */}
             <div className="mt-6 drop-shadow-md">
-              <img src="/images/logo_receitas_branco.webp" alt="Logo Receitas" className="h-16 w-auto" />
+              <img src="/images/logo_receitas_branco.webp" alt="Logo Receitas" className="h-16 w-auto" style={{height: '49px'}} />
             </div>
           </div>
         </section>
