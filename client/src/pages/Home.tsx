@@ -22,7 +22,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/30" /> {/* Overlay leve */}
           
           {/* Conteúdo Centralizado */}
-          <div className="relative h-full container flex flex-col items-center justify-center text-center px-4">
+          <div className="relative h-full container flex flex-col items-center justify-center text-center px-4" style={{opacity: '0.5'}}>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg tracking-wide">
               Bolos de Pote
             </h1>
