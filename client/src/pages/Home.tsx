@@ -32,7 +32,7 @@ export default function Home() {
             
             <div className="flex items-center gap-4 mb-10">
               <span className="text-[#ff7300] text-2xl">•</span>
-              <p className="text-xl md:text-2xl text-white font-bold tracking-widest drop-shadow-md uppercase">
+              <p className="text-base md:text-2xl text-white font-bold tracking-widest drop-shadow-md uppercase">
                 FÁCEIS DE FAZER E VENDER
               </p>
               <span className="text-[#ff7300] text-2xl">•</span>
