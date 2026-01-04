@@ -23,7 +23,7 @@ export default function Home() {
           
           {/* Conteúdo Centralizado */}
           <div className="relative h-full container flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg tracking-wide">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 drop-shadow-lg tracking-wide">
               Bolos de Pote
             </h1>
             <h2 className="text-5xl md:text-7xl font-bold text-[#ff7300] mb-6 drop-shadow-xl leading-tight">
