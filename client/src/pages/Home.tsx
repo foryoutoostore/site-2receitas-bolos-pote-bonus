@@ -53,7 +53,7 @@ export default function Home() {
         </section>
 
         {/* Faixa Motivacional - FULL WIDTH BEGE ESCURO */}
-        <section className="w-full bg-[#a68b6c] py-20">
+        <section className="w-full bg-[#c2843d] py-20">
           <div className="container text-center px-4">
             <h2 className="text-3xl md:text-5xl font-bold text-[#5c3a21] mb-8 leading-tight">
               “COMECE HOJE,<br/>DA SUA COZINHA”
