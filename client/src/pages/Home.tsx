@@ -40,7 +40,7 @@ export default function Home() {
             
             <a 
               href="#receitas"
-              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-2 px-8 rounded-full text-lg md:text-xl transition-all shadow-xl transform hover:scale-105 whitespace-nowrap"
+              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-2 px-8 rounded-full text-lg md:text-xl transition-all shadow-xl transform hover:scale-105 whitespace-nowrap" style={{width: '297px'}}
             >
               Sua Renda Extra Começa Agora!
             </a>
