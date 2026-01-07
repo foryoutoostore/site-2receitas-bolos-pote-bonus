@@ -40,7 +40,8 @@ export default function Home() {
             
             <a 
               href="#receitas"
-              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-2 px-8 rounded-full text-lg md:text-xl transition-all shadow-xl transform hover:scale-105 flex flex-col items-center justify-center leading-tight h-auto" style={{width: '297px', minHeight: '60px'}}
+              className="bg-[#ff7300] hover:bg-[#e66000] text-white font-bold py-2 px-8 rounded-full text-lg md:text-xl transition-all shadow-xl transform hover:scale-105 flex flex-col items-center justify-center leading-tight h-auto"
+              style={{width: '297px', minHeight: '60px'}}
             >
               <span>Sua Renda Extra</span>
               <span>Começa Agora!</span>
